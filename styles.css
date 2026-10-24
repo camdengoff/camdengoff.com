@@ -82,7 +82,7 @@ h3 { margin: 0 0 6px; font-size: 1.1rem; }
 .split-item {
   flex: 1;
   margin: 0;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 2.39 / 1;
   display: grid;
   place-items: center;
   color: var(--muted);
