@@ -1,22 +1,24 @@
 :root {
-  --bg: #fafaf8;
-  --bg-alt: #f0efe9;
-  --text: #1a1a1a;
-  --muted: #5c5c57;
-  --accent: #2b4acb;
-  --card: #fff;
-  --border: #e2e0d8;
+  --bg: #f5f2e6;
+  --bg-alt: #eae6d3;
+  --text: #1e2a21;
+  --muted: #5b6659;
+  --accent: #2f4a3a;
+  --on-accent: #f5f2e6;
+  --card: #fbf9f0;
+  --border: #d9d4bc;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #121212;
-    --bg-alt: #1b1b1a;
-    --text: #f2f1ec;
-    --muted: #a5a39b;
-    --accent: #8ea2ff;
-    --card: #1f1f1e;
-    --border: #2f2f2c;
+    --bg: #131a15;
+    --bg-alt: #1a231c;
+    --text: #efebdb;
+    --muted: #a1aa98;
+    --accent: #a9c6a2;
+    --on-accent: #14201a;
+    --card: #1f2921;
+    --border: #2c382e;
   }
 }
 
@@ -71,7 +73,7 @@ h3 { margin: 0 0 6px; font-size: 1.1rem; }
   border: 1px solid var(--accent);
   border-radius: 8px;
   background: var(--accent);
-  color: #fff;
+  color: var(--on-accent);
   font: inherit;
   font-weight: 600;
   text-decoration: none;
@@ -79,8 +81,8 @@ h3 { margin: 0 0 6px; font-size: 1.1rem; }
 }
 .btn:hover { opacity: .9; }
 .btn-ghost { background: transparent; color: var(--accent); }
-.btn-small { padding: 6px 14px; font-size: 14px; color: #fff; }
-.site-header nav a.btn-small { color: #fff; }
+.btn-small { padding: 6px 14px; font-size: 14px; }
+.site-header nav a.btn-small { color: var(--on-accent); }
 
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
 .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; }
