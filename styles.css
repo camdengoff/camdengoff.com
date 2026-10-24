@@ -151,5 +151,7 @@ h3 { margin: 0 0 6px; font-size: 1.1rem; }
   .about { grid-template-columns: 1fr; gap: 24px; }
   .portrait { max-width: 280px; }
   .work .subhead, .split { margin-left: 20px; margin-right: 20px; }
-  .split-item { aspect-ratio: 3 / 4; }
+  .split { flex-direction: column; }
+  .split-item:first-child { border-radius: 12px 12px 0 0; }
+  .split-item:last-child { border-radius: 0 0 12px 12px; }
 }
