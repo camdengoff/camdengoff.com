@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Camden Goff — Video &amp; Church Website Tools</title>
+  <meta name="description" content="Freelance video production and purpose-built website tools for churches, by Camden Goff.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top">Camden Goff</a>
+    <nav>
+      <a href="#video">Video</a>
+      <a href="#tools">Church Tools</a>
+      <a href="#about">About</a>
+      <a class="btn btn-small" href="#contact">Get in touch</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">Freelance video &middot; Church website tools</p>
+      <h1>Video that tells your story. Tools that help your church run online.</h1>
+      <p class="lead">I shoot and edit video, and I build the website tools that church teams actually use week to week.</p>
+      <div class="actions">
+        <a class="btn" href="#contact">Start a project</a>
+        <a class="btn btn-ghost" href="#tools">See the tools</a>
+      </div>
+    </section>
+
+    <section id="video" class="section">
+      <h2>Video</h2>
+      <p class="section-intro">From a single sermon recap to a full promo, shot and finished end to end.</p>
+      <div class="grid">
+        <article class="card">
+          <h3>Event &amp; promo video</h3>
+          <p>Short, polished pieces for launches, events, and campaigns.</p>
+        </article>
+        <article class="card">
+          <h3>Sermon &amp; service content</h3>
+          <p>Clips, recaps, and social cuts that get weekly messages seen beyond Sunday.</p>
+        </article>
+        <article class="card">
+          <h3>Editing &amp; post-production</h3>
+          <p>Already have footage? I'll cut, color, and sound-mix it.</p>
+        </article>
+      </div>
+
+      <h3 class="subhead">Selected work</h3>
+      <div class="grid work">
+        <!-- Replace each .thumb with a YouTube/Vimeo embed or <video> tag -->
+        <figure class="thumb"><span>Project 1</span></figure>
+        <figure class="thumb"><span>Project 2</span></figure>
+        <figure class="thumb"><span>Project 3</span></figure>
+      </div>
+    </section>
+
+    <section id="tools" class="section alt">
+      <h2>Church website tools</h2>
+      <p class="section-intro">Tools I've built to make church websites easier to run. Available to use, customize, or have set up for you.</p>
+      <div class="grid">
+        <!-- Duplicate/replace these cards with your real tools -->
+        <article class="card">
+          <h3>Tool name</h3>
+          <p>One sentence on the problem it solves for a church team.</p>
+          <a class="link" href="#contact">Learn more &rarr;</a>
+        </article>
+        <article class="card">
+          <h3>Tool name</h3>
+          <p>One sentence on the problem it solves for a church team.</p>
+          <a class="link" href="#contact">Learn more &rarr;</a>
+        </article>
+        <article class="card">
+          <h3>Tool name</h3>
+          <p>One sentence on the problem it solves for a church team.</p>
+          <a class="link" href="#contact">Learn more &rarr;</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p class="prose">Hi, I'm Camden. Add a short paragraph here about your background, your experience serving in church media, and why you do this work.</p>
+    </section>
+
+    <section id="contact" class="section alt">
+      <h2>Let's work together</h2>
+      <p class="section-intro">Tell me a little about your project and I'll get back to you.</p>
+      <!-- Swap the action for your Formspree/Netlify Forms endpoint to get submissions by email -->
+      <form class="form" action="mailto:goffcamden@gmail.com" method="post" enctype="text/plain">
+        <label>Name <input name="name" required></label>
+        <label>Email <input type="email" name="email" required></label>
+        <label>I'm interested in
+          <select name="interest">
+            <option>Video</option>
+            <option>Church website tools</option>
+            <option>Both</option>
+          </select>
+        </label>
+        <label>Message <textarea name="message" rows="5" required></textarea></label>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year">2026</span> Camden Goff</p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
