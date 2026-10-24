@@ -47,7 +47,15 @@ a { color: inherit; }
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
 }
-.logo { font-weight: 700; text-decoration: none; }
+.logo { display: block; text-decoration: none; }
+.signature {
+  display: block;
+  width: 108px;
+  aspect-ratio: 1500 / 715;
+  background: var(--accent);
+  -webkit-mask: url("images/Camden%20Goff_signature.png") center / contain no-repeat;
+  mask: url("images/Camden%20Goff_signature.png") center / contain no-repeat;
+}
 .site-header nav { display: flex; align-items: center; gap: 20px; }
 .site-header nav a { text-decoration: none; color: var(--muted); font-size: 15px; }
 .site-header nav a:hover { color: var(--text); }
